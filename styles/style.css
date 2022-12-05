@@ -1,49 +1,6 @@
-/* Gerais */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.row {
-    margin: 0;
-}
-
-.container {
-    padding: 70px;
-}
-
-p, li {
-    color: #444;
-    font-size: 14px;
-}
-
-/* Barra de navegção */
-
-header, .navbar {
-    background-color: #353d41;
-}
-
-#navbar-container {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-#logo {
-    width: 75px;
-}
-
-.navbar-brand {
+/* geral */
+*{ 
     padding: 0;
-    color: #fff;
-}
-
-.navbar-brand:hover {
-    color: #fff;
-}
-
-#navbar-links a{
-    color: #fff;
-}
-
-.navbar-expand-lg .navbar-nav .navlink{
-    padding: 1rem 0.8rem;
+    margin: 0;
+    box-sizing: border-box;    
 }
