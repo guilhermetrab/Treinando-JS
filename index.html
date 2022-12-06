@@ -8,29 +8,57 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body onresize="tela()">
     <header>
-        <nav>
-            <div>
-                <h1>Gui Developer<h1>
+        <nav id="navheader">
+            <div id="h1">
+                <h1><a href="">Gui Developer</a><h1>
             </div>
 
-            <div id="menupc">
-
+            <div id="menucomputer">
+                <div id="menupc">
+                    <a class="item" href="#">Home</a>
+                    <a class="item" href="#">Projetos</a>
+                    <a class="item" href="#">Sobre</a>
+                    <a class="item" href="#">Contato</a>
+                </div>
             </div>
 
-            <div>
-                <button onclick="menushow()">
+        
+
+            <div id="menuicon">
+                <button id="buttonicon" onclick="menushow()">
                     <i id="icon" class="material-icons">menu</i>
                 </button>
-            </div>
-
-            <div id="menumobile">
-                
+                <div id="menumobile">
+                    <div id="listmobile">
+                        <a class="item" href="#">Home</a>
+                        <a class="item" href="#">Projetos</a>
+                        <a class="item" href="#">Sobre</a>
+                        <a class="item" href="#">Contato</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
-    <script src="js/script.js"></script>
+    <main>
+        aaaa
+    </main>
+
+    <footer> 
+        <ul class="social">
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Portifólio</a></li>
+        </ul>
+        <p class="copy_right">
+            <span><a href="#">JS Aplications</a></span> &copy; 2022
+        </p>
+    </footer>
+   
+ 
+
+    <script src="js/navbar.js"></script>
 </body>
 </html>
