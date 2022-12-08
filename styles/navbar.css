@@ -29,7 +29,7 @@
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
-    height: 10vh;
+    height: 11vh;
   }
   
   .nav-list {
@@ -58,7 +58,7 @@
 main {
     background: url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
-    height: 81vh;
+    min-height: 81%;
   }
 
 #projetos {
@@ -72,6 +72,54 @@ main {
     display: flex;
     flex-direction: column;
 }
+/* nav do projeto */
+.navproject{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navproject h1 {
+    color: rgb(206, 172, 206);
+    margin-left: 5vw;
+}
+
+#fechar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(206, 172, 206);
+}
+
+#fechar i{
+    font-size: 35px;
+}
+
+.mainproject ul {
+    width: 90%;
+    display: flex;
+    background-color: #323236;
+    border: 1px solid rgb(206, 172, 206);
+    border-radius: 5px;
+    margin: auto;
+    padding: 1em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mainproject ul li {
+    list-style:none;
+}
+
+.projeto {
+    background-color: #23232e;
+    width: 28vw;
+    height: 10vh;
+    margin: 5px;
+    border-radius: 4px;
+}
+
 /* Footer */
 footer{
     background-color: #23232e;
