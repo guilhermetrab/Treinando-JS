@@ -56,68 +56,52 @@
   }
 /* Main */
 main {
-    background: url("../img/bg.jpg") no-repeat center center;
+    background: #323236 url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
-    min-height: 81%;
+    min-height: 81vh;
   }
 
 #projetos {
-    background-color: #292933;
-    width: 80vw;
-    min-height: 75vh;
-    border-radius: 5px;
-    position: absolute;
-    top: 13vh;
-    left: 10vw;
-    display: flex;
-    flex-direction: column;
-}
-/* nav do projeto */
-.navproject{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 480px;
+  background-color: #323236;
+  border-radius: 5px;
+  display: none;
 }
 
-.navproject h1 {
-    color: rgb(206, 172, 206);
-    margin-left: 5vw;
+/* Nav dos Projetos */
+
+.navprojetos {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
 }
 
-#fechar {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: rgb(206, 172, 206);
+.navprojetos h1{
+  font-size: 30px;
+  margin-left: 100px;
+  color: rgb(223, 223, 223);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: lighter;
 }
 
-#fechar i{
-    font-size: 35px;
+#btnfechar {
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  margin-right: -50px;
 }
 
-.mainproject ul {
-    width: 90%;
-    display: flex;
-    background-color: #323236;
-    border: 1px solid rgb(206, 172, 206);
-    border-radius: 5px;
-    margin: auto;
-    padding: 1em;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.mainproject ul li {
-    list-style:none;
-}
-
-.projeto {
-    background-color: #23232e;
-    width: 28vw;
-    height: 10vh;
-    margin: 5px;
-    border-radius: 4px;
+iframe#tela{
+  position: relative;
+  width: 600px;
+  height: 415px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 /* Footer */
@@ -140,7 +124,7 @@ footer{
 }
 
 .social li{
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 .social li a{
@@ -216,4 +200,10 @@ footer{
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  @media (max-width: 600px) {
+    #projetos{
+      width: 450px;
+    }
   }

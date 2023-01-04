@@ -13,14 +13,14 @@
     <header>      
         <nav>
             <a href="#" class="logo">Gui developer</a>
-            <div class="mobile-menu">
+            <div id="mobilemenu" class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
                 <li><a class="item" href="navbar.html">Home</a></li>
-                <li><a class="item" href="#">Projetos</a></li>
+                <li><a class="item" href="#projetos" onclick="openProject()">Projetos</a></li>
                 <li><a class="item" href="#">Sobre</a></li>
                 <li><a class="item" href="#">Contato</a></li>
             </ul>
@@ -29,44 +29,13 @@
     <main class="main">
         <section id="principal">
             <div id="projetos">
-            <div class="navproject">
-                <h1>JS Aplications</h1>
-                <button id="fechar" >
-                    <i class="material-icons">close</i>
-                </button>
-            </div>
-            <div class="mainproject">
-                <ul>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                    <li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li><li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li><li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li><li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li><li><div class="projeto">
-                        <p>Alguma coisa</p> <i class="material-icons">expand_more</i>
-                    </div></li>
-                </ul>
+                <div class="navprojetos">
+                    <h1>JS Aplications</h1>
+                    <i id="btnfechar" onclick="fecharprojetos()" class="material-icons">close</i>
+                </div>
+                <div id="projeto">
+                    <iframe src="home.html" name="tela" id="tela" frameborder="0"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -83,6 +52,11 @@
             </p>
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="js/openProject.js"></script>
+    <script src="js/fecharprojetos.js"></script>
+    <script></script>
 </body>
 </html>
